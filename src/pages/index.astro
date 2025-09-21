@@ -20,19 +20,20 @@ import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
 			<div
 				class="relative bg-[linear-gradient(90deg,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.8)_30%,rgba(255,255,255,0.2)_70%,transparent_100%),url('/images/banner-fondo.jpg')] bg-[left_8%_bottom_94%] bg-cover"
 			>
+				<div class="absolute inset-0 bg-[#000000FF] opacity-55"></div>
 				<ResponsiveConttainer>
 					<section class="relative flex justify-center gap-x-10">
 						<div
 							class="flex w-1/2 flex-col gap-4 justify-between py-12"
 						>
 							<h1
-								class="text-text-900 z-20 text-6xl w-4/5 font-semibold"
+								class="text-white z-20 text-5xl w-4/5 font-semibold"
 							>
 								Property Management & Remodeling in Cleveland,
 								OH
 							</h1>
 							<h4
-								class="text-text-900 z-20 text-2xl w-4/5 font-semibold"
+								class="text-white z-20 text-2xl w-4/5 font-semibold"
 							>
 								“Make your investments easier”
 							</h4>
@@ -56,18 +57,134 @@ import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
 				<section class="py-24 flex flex-col gap-10">
 					<header>
 						<h2
-							class="text-text-900 text-4xl font-semibold text-center"
+							class="text-primary-900 text-4xl font-semibold text-center"
 						>
 							What We Offer?
 						</h2>
 					</header>
 					<main class="flex gap-10 justify-center">
-						<CardOffer />
-						<CardOffer />
-						<CardOffer />
+						<CardOffer button="Find out more">
+							<h3 slot="title">Property Management</h3>
+							<svg
+								slot="icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="84"
+								height="84"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-house-icon lucide-house"
+								><path
+									d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
+								></path><path
+									d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+								></path></svg
+							>
+							<p slot="description">
+								Stress-free management of your rental
+								properties, including tenant screening, rent
+								collection, and maintenance
+							</p>
+						</CardOffer>
+						<CardOffer button="Find out more">
+							<svg
+								slot="icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="84"
+								height="84"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-garden-cart"
+								><path
+									stroke="none"
+									d="M0 0h24v24H0z"
+									fill="none"></path><path
+									d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"
+								></path><path
+									d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055"
+								></path><path
+									d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323"
+								></path></svg
+							>
+							<h3 slot="title">Lawn Care</h3>
+							<p slot="description">
+								Professional mowing, trimming, and seasonal yard
+								maintenance to keep your properties looking
+								their best.
+							</p>
+						</CardOffer>
+						<CardOffer button="Find out more">
+							<svg
+								slot="icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="84"
+								height="84"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-snowflake-off"
+								><path
+									stroke="none"
+									d="M0 0h24v24H0z"
+									fill="none"></path><path d="M10 4l2 1l2 -1"
+								></path><path
+									d="M12 2v6m1.196 1.186l1.804 1.034"
+								></path><path
+									d="M17.928 6.268l.134 2.232l1.866 1.232"
+								></path><path d="M20.66 7l-5.629 3.25l-.031 .75"
+								></path><path d="M19.928 14.268l-1.015 .67"
+								></path><path d="M14.212 14.226l-2.171 1.262"
+								></path><path d="M14 20l-2 -1l-2 1"></path><path
+									d="M12 22v-6.5l-3 -1.72"></path><path
+									d="M6.072 17.732l-.134 -2.232l-1.866 -1.232"
+								></path><path
+									d="M3.34 17l5.629 -3.25l-.01 -3.458"
+								></path><path
+									d="M4.072 9.732l1.866 -1.232l.134 -2.232"
+								></path><path d="M3.34 7l5.629 3.25l.802 -.466"
+								></path><path d="M3 3l18 18"></path></svg
+							>
+							<h3 slot="title">Snow Removal</h3>
+							<p slot="description">
+								Driveway and walkway clearing, ice management,
+								and emergency snow services.
+							</p>
+						</CardOffer>
 					</main>
 				</section>
 			</ResponsiveConttainer>
+			<div class="bg-primary-50">
+				<ResponsiveConttainer>
+					<section class="py-24 flex flex-col gap-10">
+						<header>
+							<h2
+								class="text-text-900 text-4xl font-semibold text-center"
+							>
+								Our Values
+							</h2>
+						</header>
+						<main class="grid grid-cols-2 gap-10">
+							<CardOffer />
+							<CardOffer />
+							<CardOffer />
+							<CardOffer />
+							<CardOffer />
+							<CardOffer />
+						</main>
+					</section>
+				</ResponsiveConttainer>
+			</div>
+
 			<ResponsiveConttainer>
 				<section class="py-24 flex flex-col gap-10">
 					<header>
@@ -87,7 +204,8 @@ import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
 					</main>
 				</section>
 			</ResponsiveConttainer>
+
+			<Footer />
 		</main>
-		<Footer />
 	</body>
 </html>

@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* Montserrat Font Family */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins Font Family */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary-50: #f0f4f8;
+  --color-primary-100: #d9e2ec;
+  --color-primary-200: #bcccdc;
+  --color-primary-300: #9fb3c8;
+  --color-primary-400: #829ab1;
+  --color-primary-500: #627d98;
+  --color-primary-600: #486581;
+  --color-primary-700: #334e68;
+  --color-primary-800: #243b53;
+  --color-primary-900: #1D3557;
+  --color-primary-950: #0f1a2e;
+  
+  --color-secondary-50: #f0f9f2;
+  --color-secondary-100: #d1f0d9;
+  --color-secondary-200: #a8e0b8;
+  --color-secondary-300: #7fd197;
+  --color-secondary-400: #6DBE81;
+  --color-secondary-500: #5aaa6e;
+  --color-secondary-600: #46965a;
+  --color-secondary-700: #35804a;
+  --color-secondary-800: #266a3b;
+  --color-secondary-900: #1a542e;
+  --color-secondary-950: #0f3e21;
+  
+  --color-background-100: #F1F2F4;
+  --color-text-900: #252A32;
+  --color-accent-600: #C5A46D;
+}
+
+h1,h2,h3,h4,h5,h6,button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}

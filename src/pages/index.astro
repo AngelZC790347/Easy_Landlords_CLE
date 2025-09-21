@@ -1,5 +1,9 @@
 ---
-
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import CardOffer from "../components/CardOffer.astro";
+import Footer from "../components/Footer.astro";
+import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
 ---
 
 <html lang="en">
@@ -8,9 +12,82 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Easy for Landlords CLE</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Header />
+		<main class="">
+			<div
+				class="relative bg-[linear-gradient(90deg,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.8)_30%,rgba(255,255,255,0.2)_70%,transparent_100%),url('/images/banner-fondo.jpg')] bg-[left_8%_bottom_94%] bg-cover"
+			>
+				<ResponsiveConttainer>
+					<section class="relative flex justify-center gap-x-10">
+						<div
+							class="flex w-1/2 flex-col gap-4 justify-between py-12"
+						>
+							<h1
+								class="text-text-900 z-20 text-6xl w-4/5 font-semibold"
+							>
+								Property Management & Remodeling in Cleveland,
+								OH
+							</h1>
+							<h4
+								class="text-text-900 z-20 text-2xl w-4/5 font-semibold"
+							>
+								“Make your investments easier”
+							</h4>
+							<button
+								class="bg-secondary-500 text-primary-50 px-6 py-2 rounded max-w-fit font-semibold"
+							>
+								Get Free Quotes
+							</button>
+						</div>
+						<div class="flex items-center">
+							<img
+								class="h-full max-h-[600px] w-full object-cover rounded-lg"
+								src="/images/casa.png"
+								alt="Casa de Ejemplo"
+							/>
+						</div>
+					</section>
+				</ResponsiveConttainer>
+			</div>
+			<ResponsiveConttainer>
+				<section class="py-24 flex flex-col gap-10">
+					<header>
+						<h2
+							class="text-text-900 text-4xl font-semibold text-center"
+						>
+							What We Offer?
+						</h2>
+					</header>
+					<main class="flex gap-10 justify-center">
+						<CardOffer />
+						<CardOffer />
+						<CardOffer />
+					</main>
+				</section>
+			</ResponsiveConttainer>
+			<ResponsiveConttainer>
+				<section class="py-24 flex flex-col gap-10">
+					<header>
+						<h2
+							class="text-text-900 text-4xl font-semibold text-center"
+						>
+							Our Values
+						</h2>
+					</header>
+					<main class="grid grid-cols-2 gap-10">
+						<CardOffer />
+						<CardOffer />
+						<CardOffer />
+						<CardOffer />
+						<CardOffer />
+						<CardOffer />
+					</main>
+				</section>
+			</ResponsiveConttainer>
+		</main>
+		<Footer />
 	</body>
 </html>

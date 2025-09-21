@@ -4,6 +4,9 @@ import Header from "../components/Header.astro";
 import CardOffer from "../components/CardOffer.astro";
 import Footer from "../components/Footer.astro";
 import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
+import CardValues from "../components/CardValues.astro";
+import Help from "../sections/Help.astro";
+import Faq from "../sections/Faq.astro";
 ---
 
 <html lang="en">
@@ -54,10 +57,10 @@ import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
 				</ResponsiveConttainer>
 			</div>
 			<ResponsiveConttainer>
-				<section class="py-24 flex flex-col gap-10">
+				<section class="py-10 flex flex-col gap-10" id="services">
 					<header>
 						<h2
-							class="text-primary-900 text-4xl font-semibold text-center"
+							class="text-primary-900 text-5xl font-bold text-center"
 						>
 							What We Offer?
 						</h2>
@@ -163,23 +166,65 @@ import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
 					</main>
 				</section>
 			</ResponsiveConttainer>
-			<div class="bg-primary-50">
+			<div class="bg-background-100">
 				<ResponsiveConttainer>
-					<section class="py-24 flex flex-col gap-10">
-						<header>
+					<section class="py-10 flex flex-col gap-20" id="choose">
+						<header class="flex flex-col gap-10">
 							<h2
-								class="text-text-900 text-4xl font-semibold text-center"
+								class="text-primary-900 text-5xl font-bold text-center"
 							>
 								Our Values
 							</h2>
+							<p class="text-text-900 text-xl text-center">
+								At Easy for Landlords, we believe in honesty,
+								integrity, and transparency. Our values guide
+								our decision-making and actions, ensuring that
+								we provide the best possible service to our
+								clients.
+							</p>
 						</header>
 						<main class="grid grid-cols-2 gap-10">
-							<CardOffer />
-							<CardOffer />
-							<CardOffer />
-							<CardOffer />
-							<CardOffer />
-							<CardOffer />
+							<CardValues>
+								<h3 slot="title">Reliability</h3>
+								<p slot="description">
+									We take care of your properties as if they
+									were our own.
+								</p>
+							</CardValues>
+							<CardValues>
+								<h3 slot="title">Transparency</h3>
+								<p slot="description">
+									Clear communication and regular updates on
+									all services.
+								</p>
+							</CardValues>
+							<CardValues>
+								<h3 slot="title">Security</h3>
+								<p slot="description">
+									Your investments and tenants are always
+									protected.
+								</p>
+							</CardValues>
+							<CardValues>
+								<h3 slot="title">Quality</h3>
+								<p slot="description">
+									We deliver services with the highest
+									standards every time.
+								</p>
+							</CardValues>
+							<CardValues>
+								<h3 slot="title">Punctuality</h3>
+								<p slot="description">
+									We complete every task on time and as
+									promised.
+								</p>
+							</CardValues>
+							<CardValues>
+								<h3 slot="title">Customer Focus</h3>
+								<p slot="description">
+									Your satisfaction is our top priority.
+								</p>
+							</CardValues>
 						</main>
 					</section>
 				</ResponsiveConttainer>
@@ -187,24 +232,12 @@ import ResponsiveConttainer from "../components/ResponsiveConttainer.astro";
 
 			<ResponsiveConttainer>
 				<section class="py-24 flex flex-col gap-10">
-					<header>
-						<h2
-							class="text-text-900 text-4xl font-semibold text-center"
-						>
-							Our Values
-						</h2>
-					</header>
-					<main class="grid grid-cols-2 gap-10">
-						<CardOffer />
-						<CardOffer />
-						<CardOffer />
-						<CardOffer />
-						<CardOffer />
-						<CardOffer />
-					</main>
+					<Help />
 				</section>
 			</ResponsiveConttainer>
-
+			<ResponsiveConttainer>
+				<Faq />
+			</ResponsiveConttainer>
 			<Footer />
 		</main>
 	</body>

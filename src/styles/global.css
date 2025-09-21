@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+:root{
+    color-scheme: light;    
+}
 /* Montserrat Font Family */
 @font-face {
   font-family: 'Montserrat';

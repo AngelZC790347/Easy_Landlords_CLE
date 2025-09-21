@@ -1,0 +1,36 @@
+---
+const { button } = Astro.props;
+---
+
+<article
+    class="rounded-lg border border-gray-100 p-4 shadow-lg transition sm:p-6 flex gap-6"
+>
+    <span class="flex items-center rounded-sm p-2 text-secondary-500">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-check-big-icon lucide-circle-check-big"
+            ><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path
+                d="m9 11 3 3L22 4"></path></svg
+        >
+    </span>
+    <a href="#">
+        <div class="mt-0.5 text-lg font-medium text-primary-600 flex flex-col">
+            <header class="text-xl font-semibold uppercase">
+                <slot name="title" />
+            </header>
+            <main
+                class="mt-2 line-clamp-3 text-sm/relaxed text-text-900 max-w-[300px]"
+            >
+                <slot name="description" />
+            </main>
+        </div>
+    </a>
+</article>
